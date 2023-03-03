@@ -1,0 +1,85 @@
+﻿<Window x:Class="KutuphaneWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KutuphaneWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="930">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="310"/>
+            <ColumnDefinition Width="310"/>
+            <ColumnDefinition Width="310"   />
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0">
+            <TextBlock Text="... 2.El Kitap Magazamıza Hosgeldiniz ... :" Width="250
+                       " HorizontalAlignment="Center" FontSize="14" Height="50"></TextBlock>
+            <StackPanel Orientation="Horizontal" Margin="5" >
+                <TextBlock Text="Kitap Adı :" Width="100"></TextBlock>
+                <TextBox Name="txtkitapAd" Width="200" />
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="5" >
+                <TextBlock Text="Yazar Adı :" Width="100"></TextBlock>
+                <TextBox Name="txtyazarAd" Width="200" />
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="5" >
+                <TextBlock Text="Kacıncı baskı :" Width="100"></TextBlock>
+                <TextBox Name="txtbaski" Width="200" />
+            </StackPanel>
+            
+            <StackPanel Orientation="Horizontal" Margin="5" >
+                <TextBlock Text="Kutuphane :" Width="100"></TextBlock>
+                <ComboBox Name="cmbKutuphaneler" Width="200" />
+            </StackPanel>
+            
+            <StackPanel Orientation="Horizontal" Margin="5" >
+                <TextBlock Text="Yazarın DogumT. :" Width="100"></TextBlock>
+                <DatePicker x:Name="DogumTarihi" Width="200"/>
+            </StackPanel>
+            
+            <StackPanel>
+                <TextBlock Margin="5" Text="kitabın yıpranma oranı"></TextBlock>
+                <TextBlock Text="{Binding ElementName=slider,Path=Value}" Height="20" FontSize="14"/>
+                <Slider x:Name="slider" Height="40" Width="250"
+                    Maximum="100" SmallChange="10" Value="0"/>
+            </StackPanel>
+            <StackPanel>
+                <CheckBox Margin="5" Name="chckOnay" Content="Onay"/>
+                <Button Margin="5" Name="btnKaydett" Content="Kaydet"
+                    IsEnabled="{Binding ElementName=chckOnay,Path=IsChecked}"/>
+            </StackPanel>
+           
+        </StackPanel>
+        <StackPanel Grid.Column="1">
+            <TextBlock Margin="5" Text="kitap Adi: "></TextBlock>
+            <TextBlock Text="{Binding ElementName=txtkitapAd,Path=Text}" Height="40" FontSize="14"/>
+
+            <TextBlock Margin="5" Text="Yazar Adı: "></TextBlock>
+            <TextBlock Text="{Binding ElementName=txtyazarAd,Path=Text}" Height="40" FontSize="14"/>
+          
+            <TextBlock Margin="5" Text="Baskısı: "></TextBlock>
+            <TextBlock Text="{Binding ElementName=txtbaski,Path=Text}" Height="40" FontSize="14"/>
+
+            <TextBlock Margin="5" Text="Kutuphane: "></TextBlock>
+            <TextBlock Text="{Binding ElementName=cmbKutuphaneler,Path=SelectedItem}" Height="40" FontSize="14"/>
+
+
+            <TextBlock Margin="5" Text="kitabın yıpranma oranı"></TextBlock>
+            <TextBlock Text="{Binding ElementName=slider,Path=Value}" Height="40" FontSize="14"/>
+
+
+        </StackPanel>
+        <StackPanel Grid.Column="2">
+            <TextBox Name="lst" Margin="12,52,12,110" Width="
+                     260" Height="200">
+               
+            </TextBox>
+
+        </StackPanel>
+
+    </Grid>
+</Window>

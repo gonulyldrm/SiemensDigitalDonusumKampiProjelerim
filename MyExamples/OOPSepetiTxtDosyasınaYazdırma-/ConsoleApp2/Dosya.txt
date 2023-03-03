@@ -1,0 +1,9 @@
+Toplam fiyat(KDV hariç): 8.5  Toplam fiyat(KDV dahil): 9.605  Sipariş KDV toplamı: 1.1050000000000004
+Toplam fiyat(KDV hariç): 8.5  Toplam fiyat(KDV dahil): 9.605  Sipariş KDV toplamı: 1.1050000000000004
+Toplam fiyat(KDV hariç): 7.5  Toplam fiyat(KDV dahil): 8.425  Sipariş KDV toplamı: 0.9250000000000007
+Toplam fiyat(KDV hariç): 8.5  Toplam fiyat(KDV dahil): 9.605  Sipariş KDV toplamı: 1.1050000000000004
+Toplam fiyat(KDV hariç): 7.5  Toplam fiyat(KDV dahil): 8.425  Sipariş KDV toplamı: 0.9250000000000007
+Toplam fiyat(KDV hariç): 8.5  Toplam fiyat(KDV dahil): 9.605  Sipariş KDV toplamı: 1.1050000000000004
+Toplam fiyat(KDV hariç): 8.5  Toplam fiyat(KDV dahil): 9.605  Sipariş KDV toplamı: 1.1050000000000004
+Toplam fiyat(KDV hariç): 8.5  Toplam fiyat(KDV dahil): 9.605  Sipariş KDV toplamı: 1.1050000000000004paraustu 5.395
+Toplam fiyat(KDV hariç): 9.5  Toplam fiyat(KDV dahil): 10.785  Sipariş KDV toplamı: 1.2850000000000001  para ustu: 29.215

@@ -1,0 +1,93 @@
+﻿<Window x:Class="WpfExamplee.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfExamplee"
+        mc:Ignorable="d"
+        Title="Window1" Height="550" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250"/>
+            <ColumnDefinition Width="550"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Background="#d16488" Grid.ColumnSpan="2" Margin="0,0,538,0">
+            <StackPanel Background="#a04063" Margin="20,20,15,0">
+                <Image Source="Images/book.png" Margin="5,0,5,5" Width="130" Height="130"></Image>
+
+                <Button Name="btnGoster" Background="#a04063" Foreground="White" Margin="20,10,20,20" FontSize="20" Height="30" 
+                        Click="btnGoster_Click" Width="184" >
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/bbbb.jpg" Height="25" Width="25" />
+                        <TextBlock Text="  Ürünleri Göster" Foreground="White" Height="27"/>
+                     
+                    </StackPanel>
+                    
+                </Button>
+                <Button Name="btnFilter" Background="#a04063" Foreground="White"  Margin="20,20,20,20" FontSize="20" Height="30" 
+                        Width="180" Click="btnFilter_Click" >
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/filtre2.jpg" Height="25" Width="25" />
+                        <TextBlock Text=" Ürünleri Filtrele" Foreground="White"/>
+                    </StackPanel>
+                </Button>
+                <Button Name="btnAdd" Margin="20,20,20,20" FontSize="20" Height="30" Background="#a04063" Foreground="White" 
+                         Width="180" Click="btnAdd_Click"  >
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/aaa.jpg" Height="25" Width="25" />
+                        <TextBlock Text="   Ürün Ekle       " Foreground="White"/>
+                    </StackPanel>
+                </Button>
+                
+                <Button Name="btnDeletee" Margin="20,20,20,20" Background="#a04063" Foreground="White" FontSize="20" Height="30" 
+                        Width="180" Click="btnDeletee_Click"  >
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/sil.jpg" Height="25" Width="25" />
+                        <TextBlock Text="     Ürün sil        " Foreground="White"/>
+                    </StackPanel>
+                </Button>
+                <Button Name="btnBilgiY" Margin="20,20,20,20" FontSize="20" Height="30" 
+                        Background="#a04063" Foreground="White"  Width="180" Click="btnBilgiY_Click"  >
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/soru.jpg" Height="25" Width="25" />
+                        <TextBlock Text=" Bilgi Yarışması  " Foreground="White"/>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Background="#d16488" Margin="0,0,0,-2">
+            
+            <DataGrid Name="datagridDetails" AutoGenerateColumns="False" Height="360" Width="490">
+         
+                    <DataGrid.Columns>
+                    <DataGridTextColumn Width="15" Header="..."/>
+                    <DataGridTextColumn Binding="{Binding ProductID}" Header="ProductId"/>
+                    <DataGridTextColumn Binding="{Binding ProductName}" Header="ProductName"/>
+                    <DataGridTextColumn Binding="{Binding UnitPrice}" Header="UnitPrice"/>
+                    <DataGridTextColumn Binding="{Binding UnitsInStock}" Header="UnitsInStock"/>
+                </DataGrid.Columns>
+            </DataGrid>
+            <StackPanel Orientation="Horizontal">
+                <CheckBox Content="Fiyat Filtrele(-20)         " FontSize="16" Foreground="White" Visibility="Hidden" Name="fiyatfilt20" Margin="50,10,10,10" Checked="fiyatfilt20_Checked"  ></CheckBox>
+                <CheckBox Content="Fiyat Filtrele(+20)" FontSize="16" Name="fiyatfilt20p" Foreground="White" Visibility="Hidden"  Margin="0,10,10,10" Checked="fiyatfilt20p_Checked"   ></CheckBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <CheckBox Content="Fiyat Filtrele(50-80)     " FontSize="16" Visibility="Hidden" Name="Count" Foreground="White" Margin="50,10,10,10" Checked="Count_Checked"  ></CheckBox>
+                <CheckBox Content="Stokta Olmayan Ürünler" Foreground="White" FontSize="16" Visibility="Hidden" Name="chckStok" Margin="0,10,10,10" Checked="chckStok_Checked" ></CheckBox>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Name" Margin="5"  Visibility="Hidden" Name="txtNameOrID"></TextBlock>
+                <TextBox Name="txtNameOrIDD" Visibility="Hidden" Width="100"></TextBox>
+                <TextBlock Text="Price" Name="txtunitpricee" Visibility="Hidden" Margin="15,5,5,5" ></TextBlock>
+                <TextBox Name="txtUnitPrice" Visibility="Hidden" Width="100"></TextBox>
+                <TextBlock Text="Stock" Name="txtstokk" Visibility="Hidden" Margin="15,5,5,5" ></TextBlock>
+                <TextBox Name="txtStock" Visibility="Hidden" Width="100"></TextBox>
+                <Button Name="btnADD2" Content="Ekle" Background="#a04063" Foreground="White"  Visibility="Hidden" Width="80" FontSize="12" Margin="15,5,5,5" Click="btnADD2_Click"></Button>
+            </StackPanel>
+            <StackPanel >
+                <Button Name="btnDelete" Background="#a04063" Foreground="White"  Visibility="Hidden" HorizontalAlignment="Left"  Margin="70,5,5,5" Content="Sil" Width="52" Click="btnDelete_Click"></Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

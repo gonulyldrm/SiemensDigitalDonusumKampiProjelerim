@@ -1,0 +1,17 @@
+C:\Users\Z004PTMH\source\repos\KutuphaneWPF\KutuphaneWPF\bin\Debug\KutuphaneWPF.exe.config
+C:\Users\Z004PTMH\source\repos\KutuphaneWPF\KutuphaneWPF\bin\Debug\KutuphaneWPF.exe
+C:\Users\Z004PTMH\source\repos\KutuphaneWPF\KutuphaneWPF\bin\Debug\KutuphaneWPF.pdb
+C:\Users\Z004PTMH\source\repos\KutuphaneWPF\KutuphaneWPF\obj\Debug\KutuphaneWPF.csproj.AssemblyReference.cache
+C:\Users\Z004PTMH\source\repos\KutuphaneWPF\KutuphaneWPF\obj\Debug\KutuphaneWPF.csproj.SuggestedBindingRedirects.cache
+C:\Users\Z004PTMH\source\repos\KutuphaneWPF\KutuphaneWPF\obj\Debug\MainWindow.g.cs
+C:\Users\Z004PTMH\source\repos\KutuphaneWPF\KutuphaneWPF\obj\Debug\App.g.cs
+C:\Users\Z004PTMH\source\repos\KutuphaneWPF\KutuphaneWPF\obj\Debug\KutuphaneWPF_MarkupCompile.cache
+C:\Users\Z004PTMH\source\repos\KutuphaneWPF\KutuphaneWPF\obj\Debug\KutuphaneWPF_MarkupCompile.lref
+C:\Users\Z004PTMH\source\repos\KutuphaneWPF\KutuphaneWPF\obj\Debug\App.baml
+C:\Users\Z004PTMH\source\repos\KutuphaneWPF\KutuphaneWPF\obj\Debug\MainWindow.baml
+C:\Users\Z004PTMH\source\repos\KutuphaneWPF\KutuphaneWPF\obj\Debug\KutuphaneWPF.g.resources
+C:\Users\Z004PTMH\source\repos\KutuphaneWPF\KutuphaneWPF\obj\Debug\KutuphaneWPF.Properties.Resources.resources
+C:\Users\Z004PTMH\source\repos\KutuphaneWPF\KutuphaneWPF\obj\Debug\KutuphaneWPF.csproj.GenerateResource.cache
+C:\Users\Z004PTMH\source\repos\KutuphaneWPF\KutuphaneWPF\obj\Debug\KutuphaneWPF.csproj.CoreCompileInputs.cache
+C:\Users\Z004PTMH\source\repos\KutuphaneWPF\KutuphaneWPF\obj\Debug\KutuphaneWPF.exe
+C:\Users\Z004PTMH\source\repos\KutuphaneWPF\KutuphaneWPF\obj\Debug\KutuphaneWPF.pdb

@@ -1,0 +1,34 @@
+﻿<Window x:Class="WpfExamplee.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:WpfExamplee"
+    mc:Ignorable="d"
+    Title="MainWindow" Height="500" Width="500">
+
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF8400FF" Offset="1"/>
+                <GradientStop Color="White" Offset="0"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <StackPanel VerticalAlignment="Center" Height="361">
+           <Image Source="Images/icon.png" Margin="50,5,5,15" Width="150" Height="130"></Image>
+           <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <TextBlock Text="First Name:  " FontSize="20" Foreground="GhostWhite" Margin="15,5,5,5" Width="98" ></TextBlock>
+                <TextBox Name="txtfirstname" FontSize="20" Width="300" TextChanged="txtfirstname_TextChanged"></TextBox>
+
+           </StackPanel>
+           <StackPanel Orientation="Horizontal" HorizontalAlignment="Center"  VerticalAlignment="Center">
+                 <TextBlock Text=" Last Name:" FontSize="20" Foreground="GhostWhite" Margin="15,5,5,5" Height="28" Width="102"  ></TextBlock>
+                 <TextBox Name="txtlastname" FontSize="20" Margin="0,15,5,15" Width="301" Height="37" TextChanged="txtlastname_TextChanged"></TextBox>
+
+           </StackPanel>
+           <CheckBox Name="chckOnay" Content="Approval" FontSize="15" Foreground="Wheat" Margin="0,0,110,10" HorizontalAlignment="Center"></CheckBox>
+           <Button x:Name="btnlogin" Margin="260,5,5,5" IsEnabled="{Binding ElementName=chckOnay,Path=IsChecked}" Content="Login" Style="{StaticResource temelbutonstil}" Click="btnlogin_Click" Height="38"/>
+        </StackPanel>
+
+    </Grid>
+</Window>

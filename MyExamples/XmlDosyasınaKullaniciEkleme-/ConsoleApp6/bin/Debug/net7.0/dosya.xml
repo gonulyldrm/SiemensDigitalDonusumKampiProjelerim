@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Users>
+  <User>
+    <Id>1</Id>
+    <Ad>ali</Ad>
+    <Soyad>gundogdu</Soyad>
+    <Email>kkkkkkk@aaaaaaaaaaaa</Email>
+    <Active>true</Active>
+  </User>
+  <User>
+    <Id>2</Id>
+    <Ad>hhjhh</Ad>
+    <Soyad>jmjcfjf</Soyad>
+    <Email>lkkkkkkkkk</Email>
+    <Active>jjjjjj</Active>
+  </User>
+  <User>
+    <Id>3</Id>
+    <Ad>jjjjjjjjjj4</Ad>
+    <Soyad>kkkkkkkkkk</Soyad>
+    <Email>iiiiiiiiiiiiiii</Email>
+    <Active>pppppppp</Active>
+  </User>
+</Users>
